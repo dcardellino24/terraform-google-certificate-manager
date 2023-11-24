@@ -1,5 +1,39 @@
 # terraform-google-certificate-manager
 
+Terraform module to create GCP Certificate Manager Certificates and its configuration.
+
+## Usage
+
+**IMPORTANT**: We do not pin modules to versions in our examples because of the
+difficulty of keeping the versions in the documentation in sync with the latest released versions.
+We highly recommend that in your code you pin the version to the exact version you are
+using so that your infrastructure remains stable, and update versions in a
+systematic way so that they do not catch you by surprise.
+
+```hcl
+module "certificate_manager" {
+  source = "../../"
+
+  project_id = data.google_project.this.project_id
+
+  certificate_map_name        = "terratest"
+  certificate_map_description = "A certificate map for testing purposes"
+  certificates = {
+    mgmt = {
+      managed = {
+        domains = [
+          "test.example.com"
+        ]
+        dns_authorizations = []
+      }
+    }
+  }
+
+  primary_certificates = ["mgmt"]
+}
+
+```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
