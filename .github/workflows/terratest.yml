@@ -1,0 +1,16 @@
+name: Terratest
+
+on: push
+
+env:
+  TF_IN_AUTOMATION: "True"
+  GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Terratest
+        uses: cloudposse/github-action-terratest@main
+        with:
+          sourceDir: tests
