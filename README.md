@@ -121,5 +121,16 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_certificate_authorization_attempt_info"></a> [certificate\_authorization\_attempt\_info](#output\_certificate\_authorization\_attempt\_info) | n/a |
+| <a name="output_certificate_ids"></a> [certificate\_ids](#output\_certificate\_ids) | n/a |
+| <a name="output_certificate_map_id"></a> [certificate\_map\_id](#output\_certificate\_map\_id) | n/a |
+| <a name="output_certificate_map_name"></a> [certificate\_map\_name](#output\_certificate\_map\_name) | n/a |
+| <a name="output_certificate_provisioning_issue"></a> [certificate\_provisioning\_issue](#output\_certificate\_provisioning\_issue) | n/a |
+| <a name="output_certificate_state"></a> [certificate\_state](#output\_certificate\_state) | n/a |
+| <a name="output_dns_authorization_ids"></a> [dns\_authorization\_ids](#output\_dns\_authorization\_ids) | n/a |
+| <a name="output_dns_records"></a> [dns\_records](#output\_dns\_records) | n/a |
+| <a name="output_dns_records_list"></a> [dns\_records\_list](#output\_dns\_records\_list) | n/a |
+| <a name="output_primary_entry_state"></a> [primary\_entry\_state](#output\_primary\_entry\_state) | n/a |
 <!-- END_TF_DOCS -->
